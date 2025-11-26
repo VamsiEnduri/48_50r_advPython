@@ -1,0 +1,15 @@
+import pandas as p 
+data=p.read_excel("../../../../Downloads/unclean_student_data.xlsx")
+# print(data)
+
+# print(data.head(10))
+data["name"]=data["name"].str.strip().str.upper()
+# data["name"]=data["name"].str.strip()
+print(data)
+# print(data.tail(1))
+# print(data.info())
+# print(data.shape)
+# print(data.describe())
+# print(data.columns)
+# print(data.nunique())
+# print(data.sample(5))
